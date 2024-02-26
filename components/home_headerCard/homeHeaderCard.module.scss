@@ -1,0 +1,27 @@
+@import "../../styles/var";
+.homeHeader {
+  .homeCard {
+    &:hover {
+      background-color: $primary-dark;
+
+      .cardText {
+        color: $primary-light;
+      }
+    }
+
+    .cardTitle {
+      color: $primary-orange;
+      font-weight: bold;
+      font-size: $font-md;
+    }
+    .cardText {
+      color: $text-gray;
+      font-size: $font-sm;
+    }
+    border-radius: 20px;
+    transform: translateY(-150px);
+    @media screen and (max-width: 1199px) {
+      transform: translateY(-150px) scaleX(0.9);
+    }
+  }
+}

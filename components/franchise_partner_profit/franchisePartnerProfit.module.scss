@@ -1,0 +1,56 @@
+@import "../../styles/var";
+.franchise {
+  .franchise_img {
+    .franchise_title {
+      font-weight: 700;
+      background-color: $primary-coffee;
+      font-size: 18px;
+    }
+    video {
+    //   height: 100%;
+      width: 100%;
+     height: min-content;
+    }
+  }
+  .about_text {
+    .franchise_title {
+      font-weight: 700;
+      background-color: $primary-coffee;
+      font-size: 18px;
+    }
+    .heading{
+      h1{
+        @media screen and (max-width:1200px) {
+          font-size: 30px;  
+        }
+        @media screen and (max-width:576px) {
+          font-size: 25px;  
+        }
+      }
+    }
+    .franchisePartnership_desc {
+      color: $text-gray;
+      font-size: 18px;
+      p{
+        text-align: justify;
+      }
+    }
+    .about_list {
+      ul {
+        li {
+          list-style: none;
+          p{
+            font-size: 18px;
+            font-weight: 600;
+            text-align: justify;
+          }
+          .icon {
+            font-size: 28px;
+            color: $primary-coffee;
+          }
+        }
+      }
+    }
+    
+  }
+}

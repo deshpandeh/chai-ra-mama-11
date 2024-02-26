@@ -1,0 +1,33 @@
+@import "../../styles/var";
+.storeInchargeRequest {
+  .modal{
+    background-color: #00000079;
+  }
+  .header {
+    .icon {
+      font-size: $font-lg;
+      color: $bb-dark;
+    }
+    .heading {
+      color: $bb-dark;
+    }
+  }
+  .tableContainer {
+    overflow: auto;
+
+    table {
+      thead{
+        th{
+          min-width: 200px;
+          &:nth-child(1){
+            min-width: 80px;
+          }
+        }
+      }
+      button{
+        color: $white-light;
+        font-weight: 600;
+      }
+    }
+  }
+}

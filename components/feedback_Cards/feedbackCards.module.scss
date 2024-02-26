@@ -1,0 +1,56 @@
+@import "../../styles/var";
+.feedbackCards {
+  .card {
+    width: 100%;
+    height: 300px;
+    
+    .rating {
+      height: min-content !important;
+      .icon {
+        color: $primary-dark-yellow;
+      }
+    }
+    .textContainer{
+      height:220px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 6px;
+        background-color: $primary-coffee-light;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary-coffee;
+      }
+
+    }
+    .feedbackText {
+      text-align: justify;
+    }
+  }
+  .feedbackProfile {
+    .cardImage {
+      position: relative;
+      .arrow {
+        font-size: $font-xl;
+        position: absolute;
+        top: 0px;
+        transform: rotate(90deg) translateX(-30px);
+        left: 0px;
+        color: $primary-coffee;
+      }
+      img {
+        height: 65px;
+        width: 65px;
+        object-fit: cover;
+      }
+    }
+    .cardBody {
+      .name {
+        font-size: $font-md;
+      }
+      .designation {
+        font-size: $font-sm - 5px;
+        color: $primary-coffee;
+      }
+    }
+  }
+}

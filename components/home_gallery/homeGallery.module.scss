@@ -1,0 +1,21 @@
+@import "../../styles/var";
+.gallery {
+  .heading {
+    font-weight: 700;
+
+    .text_orange {
+      color: $primary-orange;
+    }
+    .text_blue {
+      color: $primary-blue;
+    }
+  }
+  div {
+    
+    img {
+      width: 100%;
+      object-fit: cover;
+      // height: max-content;
+    }
+  }
+}

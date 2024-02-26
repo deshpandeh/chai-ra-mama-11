@@ -1,0 +1,46 @@
+@import "../../styles/var";
+.storeCards {
+  .card {
+    position: relative;
+    transform: scaleX(0.9);
+    @media screen and (max-width:1100px) {
+      transform: scaleX(0.99);
+    }
+    .cardData {
+      min-height: 250px;
+      .iconContainer {
+        background-color: $primary-coffee-light;
+        .icon {
+          color: $primary-coffee;
+          font-size: $font-xl + 5px;
+        }
+      }
+      p{
+        font-size: $font-md;
+        color: $text-gray;
+        text-align: justify;
+      }
+    }
+    .mapLink{
+      a{
+        background-color: $primary-coffee;
+        color: $primary-light;
+        text-decoration: none;
+        font-size: $font-sm;
+      }
+    }
+    .badge{
+      background-color: $primary-navbar;
+      height: 68px;
+      width: 70px;
+      border-radius: 70px;
+      color: $primary-light;
+      font-size: $font-md + 10px;
+      position: absolute;
+      top:0;
+      left:0;
+      transform: translate(-20px,-20px);
+    }
+
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../styles/var";
+.menu {
+  background-color: $primary-dark-tea;
+  .heading {
+    font-weight: 700;
+
+    .text_orange {
+      color: $primary-orange;
+    }
+    .text_blue {
+      color: $primary-blue;
+    }
+  }
+  div {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .itemCard{
+    p{
+      color: $text-gray;
+    }
+  }
+  .viewMore{
+    button{
+      background-color: $primary-orange;
+      color: $primary-light;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}

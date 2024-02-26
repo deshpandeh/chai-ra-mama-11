@@ -1,0 +1,26 @@
+@import "../../styles/var";
+.aboutus {
+  .about_img {
+    img {
+      height: 100%;
+      width: 100%;
+      @media screen and (max-width: 1168px) and (min-width: 990px) {
+        height: 300px;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    font-size: $font-sm;
+    text-align: justify;
+  }
+  .text_orange {
+    color: $primary-orange;
+  }
+  .text_blue {
+    color: $primary-blue;
+  }
+}

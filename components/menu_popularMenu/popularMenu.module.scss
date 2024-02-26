@@ -1,0 +1,69 @@
+@import "../../styles/var";
+.popularMenu {
+  .menu_title {
+    background-color: $primary-coffee;
+    font-size: 20px;
+    width: fit-content;
+  }
+
+  .tabsContainer {
+    // overflow: auto;
+    .ul_tabs{
+      border-color: $primary-coffee;
+
+      li{
+        button{
+          color: $primary-coffee;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .active_tab{
+          color: $primary-light;
+          background-color: $primary-coffee;
+        }
+        .not_active{
+          color: $primary-coffee;
+          background-color: transparent;
+        }
+      }
+      &::-webkit-scrollbar {
+        height: 6px;
+        background-color: $primary-coffee-light;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary-coffee;
+      }
+    }
+    .menuItems{
+      div {
+        img {
+          width: 90px;
+          height:90px;
+          z-index: 100;
+        }
+      }
+      .itemCard{
+        .cardImage{
+          img{
+            transform: translateX(50px);
+            @media screen and (max-width:500px) {
+              transform: translateX(20px);
+            }
+          }
+          z-index: 100;  
+        }
+        .cardBody{
+          z-index: 1;
+        }
+        .price{
+          color: $primary-coffee;
+          font-size: 18px;
+        }
+      }
+    }
+    .loadmore{
+      background-color:$primary-coffee;
+      font-size: 18px;
+    }
+  }
+}

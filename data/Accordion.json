@@ -1,0 +1,22 @@
+[
+    {
+        "title": "What are the main types of tea, and what distinguishes them from one another?",
+        "content": "Content for Accordion Item 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed consectetur libero. Praesent nec purus sed neque vehicula cursus. Fusce ut justo bibendum, dapibus justo ac, dictum nunc. Curabitur non ante in elit feugiat tristique in eget urna. Vivamus nec tellus id lectus convallis semper. Suspendisse efficitur, dolor nec condimentum interdum, quam dui viverra turpis, eget bibendum massa quam non urna. Sed lacinia quam ac tortor mattis cursus. Aliquam erat volutpat. Vivamus tempus, tortor nec sollicitudin fermentum, odio libero tempus elit, vel iaculis urna justo sit amet dolor. Etiam vel convallis ipsum. Nulla facilisi."
+      },
+      {
+        "title": "How is black tea different from green tea in terms of processing and flavor?",
+        "content": "Content for Accordion Item 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed consectetur libero. Praesent nec purus sed neque vehicula cursus. Fusce ut justo bibendum, dapibus justo ac, dictum nunc. Curabitur non ante in elit feugiat tristique in eget urna. Vivamus nec tellus id lectus convallis semper. Suspendisse efficitur, dolor nec condimentum interdum, quam dui viverra turpis, eget bibendum massa quam non urna. Sed lacinia quam ac tortor mattis cursus. Aliquam erat volutpat. Vivamus tempus, tortor nec sollicitudin fermentum, odio libero tempus elit, vel iaculis urna justo sit amet dolor. Etiam vel convallis ipsum. Nulla facilisi."
+      },
+      {
+        "title": "What is the significance of tea culture in countries like China, Japan, and England?",
+        "content": "Content for Accordion Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed consectetur libero. Praesent nec purus sed neque vehicula cursus. Fusce ut justo bibendum, dapibus justo ac, dictum nunc. Curabitur non ante in elit feugiat tristique in eget urna. Vivamus nec tellus id lectus convallis semper. Suspendisse efficitur, dolor nec condimentum interdum, quam dui viverra turpis, eget bibendum massa quam non urna. Sed lacinia quam ac tortor mattis cursus. Aliquam erat volutpat. Vivamus tempus, tortor nec sollicitudin fermentum, odio libero tempus elit, vel iaculis urna justo sit amet dolor. Etiam vel convallis ipsum. Nulla facilisi."
+      },
+      {
+        "title": "Are there any specific guidelines for properly steeping different types of tea to achieve the best flavor?",
+        "content": "Content for Accordion Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed consectetur libero. Praesent nec purus sed neque vehicula cursus. Fusce ut justo bibendum, dapibus justo ac, dictum nunc. Curabitur non ante in elit feugiat tristique in eget urna. Vivamus nec tellus id lectus convallis semper. Suspendisse efficitur, dolor nec condimentum interdum, quam dui viverra turpis, eget bibendum massa quam non urna. Sed lacinia quam ac tortor mattis cursus. Aliquam erat volutpat. Vivamus tempus, tortor nec sollicitudin fermentum, odio libero tempus elit, vel iaculis urna justo sit amet dolor. Etiam vel convallis ipsum. Nulla facilisi."
+      },
+      {
+        "title": "How does caffeine content vary between different types of tea, and how does it compare to coffee?",
+        "content": "Content for Accordion Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed consectetur libero. Praesent nec purus sed neque vehicula cursus. Fusce ut justo bibendum, dapibus justo ac, dictum nunc. Curabitur non ante in elit feugiat tristique in eget urna. Vivamus nec tellus id lectus convallis semper. Suspendisse efficitur, dolor nec condimentum interdum, quam dui viverra turpis, eget bibendum massa quam non urna. Sed lacinia quam ac tortor mattis cursus. Aliquam erat volutpat. Vivamus tempus, tortor nec sollicitudin fermentum, odio libero tempus elit, vel iaculis urna justo sit amet dolor. Etiam vel convallis ipsum. Nulla facilisi."
+      }
+]

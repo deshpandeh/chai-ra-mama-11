@@ -1,0 +1,20 @@
+@import "../../styles/var";
+.modal {
+  background-color: #00000079;
+  z-index: 99990;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background-color: $primary-coffee-light;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-coffee;
+  }
+  .popUp {
+    .icon { 
+      font-size:150px;
+      color: $plain-white;
+      background-color: $primary-coffee;
+      border-radius: 50%;
+    }
+  }
+}

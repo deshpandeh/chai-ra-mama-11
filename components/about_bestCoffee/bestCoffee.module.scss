@@ -1,0 +1,49 @@
+@import "../../styles/var";
+.container {
+  color: $primary-light;
+  .bestCoffee {
+    // height:1000px
+    position: relative;
+    height: max-content;
+    .imageContainer {
+      .bgImg {
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        // filter: brightness(20%);
+        height: 100%;
+        @media screen and (min-width: 992px) {
+          min-height: 650px;
+          width: 50%;
+        }
+      }
+    }
+    .content {
+      position: relative;
+      @media screen and (min-width: 992px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .card {
+        background-color: $primary-light;
+        .text {
+          font-size: 18px;
+          color: $text-gray;
+          text-align: justify;
+        }
+        .heading {
+          font-size: 50px;
+          font-weight: bold;
+          @media screen and (max-width: 786px) {
+            font-size: 40px;
+          }
+          @media screen and (max-width: 576px) {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

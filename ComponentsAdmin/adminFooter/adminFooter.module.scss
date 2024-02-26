@@ -1,0 +1,19 @@
+@import "../../styles/var";
+.footer {
+  background-color: $bb-dark;
+  color: $primary-light;
+  .footerInner {
+    .footerItem {
+      p{
+        color: $bb-dark;
+      }
+      .socialMedia {
+        a {
+          .icon {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

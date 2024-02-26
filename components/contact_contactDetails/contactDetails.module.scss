@@ -1,0 +1,59 @@
+@import "../../styles/var";
+.contact {
+    
+  .cardContainer {
+    background-color: $primary-grey-light;
+    .card {
+      .iconContainer {
+        background-color: $primary-light;
+        .icon {
+          font-size: $font-xxl;
+        }
+      }
+      .title1 {
+        font-size: $font-md;
+        color: rgb(65, 61, 61);
+      }
+      .title2 {
+        font-size: $font-sm;
+        color: $text-gray;
+      }
+      .title3 {
+        color: $text-gray;
+        font-size: $font-sm;
+      }
+      input {
+        line-height: 60px;
+        &::placeholder {
+          font-weight: 500;
+          font-size: $font-md - 2px;
+        //   font-family: sans-serif;
+          color:$text-gray;
+        }
+      }
+      textarea{
+        // line-height: 70px;
+        height: 100px;
+        resize: none;
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: $primary-coffee-light;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: $primary-coffee;
+          }
+        &::placeholder {
+          font-weight: 500;
+          font-size: $font-md - 2px;
+        //   font-family: sans-serif;
+          color:$text-gray;
+        }
+      }
+    }
+    button {
+        background-color: $primary-coffee;
+        padding: 15px 30px;
+        font-size: $font-md;
+      }
+  }
+}

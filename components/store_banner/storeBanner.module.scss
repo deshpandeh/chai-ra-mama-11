@@ -1,0 +1,27 @@
+@import "../../styles/var";
+.storeBanner {
+  position: relative;
+  height: 350px;
+  .imageContainer {
+    img {
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(40%);
+    }
+  }
+  .storeText {
+    position: absolute;
+    top: 0;
+    height: 350px;
+    
+    .bannerHeading {
+      font-size: 55px;
+      font-weight: bold;
+      color: $primary-light;
+
+    }
+    
+  }
+}

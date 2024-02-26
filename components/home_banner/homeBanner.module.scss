@@ -1,0 +1,68 @@
+@import "../../styles/var";
+.banner {
+    .bannerInner {
+      // height:1000px
+      position: relative;
+      height: max-content;
+      .imageContainer {
+        img {
+          object-fit: cover;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          filter:  brightness(40%);;
+        }
+      }
+      .bannerItem {
+        position: absolute;
+        top: 0;
+        height: 500px;
+      //   background: #000;
+        .bannerHeading {
+          font-size: $font-xxl;
+          font-weight: bold;
+          
+          @media  screen and (min-width:1500px) {
+            font-size: $font-xxxl;
+          }
+          @media  screen and (max-width:1499px) {
+            font-size: $font-xxl;
+          }
+          @media  screen and (max-width:1399px) {
+            font-size: $font-xl;
+          }
+          @media  screen and (max-width:1199px) {
+            font-size: $font-lg;
+          }
+          @media  screen and (max-width:768px) {
+            font-size: $font-md;
+          }
+          @media  screen and (max-width:576px) {
+            font-size: $font-md;
+          }
+          .text_orange{
+            color: $primary-orange;
+          }
+          .text_blue{
+            color: $primary-blue;
+          }
+
+        }
+        .bannerText{
+          font-size: $font-sm;
+          @media  screen and (max-width:768px) {
+            font-size: $font;
+          }
+        }
+        .orderBtn{
+          button{
+              background: $primary-red;
+              font-size: $font-sm;
+              font-weight: bold;
+              padding: 10px 30px;
+          }
+        }
+      }
+    }
+  }
+  

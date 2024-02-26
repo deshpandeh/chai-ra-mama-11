@@ -1,0 +1,38 @@
+@import "../../styles/var";
+.aboutDesc {
+  .about_img {
+    img {
+      height: 90%;
+      width: 100%;
+    }
+  }
+  .about_title {
+    background-color: $primary-coffee;
+    font-size: 20px;
+    width: fit-content;
+  }
+  .about_desc {
+    color: $text-gray;
+    font-size: 18px;
+    p {
+      text-align: justify;
+    }
+  }
+  .about_list {
+    ul {
+      li {
+        list-style: none;
+        
+        p{
+          font-size: 18px;
+          font-weight: 600;
+          text-align: justify;
+        }
+        .icon {
+          font-size: 28px;
+          color: $primary-coffee;
+        }
+      }
+    }
+  }
+}

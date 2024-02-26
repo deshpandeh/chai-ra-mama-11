@@ -1,0 +1,55 @@
+@import "../../styles/var";
+.siteContent {
+  .header {
+    .icon {
+      font-size: $font-lg;
+      color: $bb-dark;
+    }
+    .heading {
+      color: $bb-dark;
+    }
+  }
+  .item {
+    text-decoration: none;
+    p {
+      color: $bb-dark;
+    }
+    .iconContainer {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background-color: $red-dark;
+      .icon {
+        color: $white-light;
+        font-size: $font-lg - 5px;
+      }
+    }
+    .iconContainer1 {
+      background-color: $red-dark;
+    }
+    .iconContainer2 {
+      background-color: $sky-dark;
+    }
+    .iconContainer3 {
+      background-color: $blue-dark;
+    }
+    .iconContainer4 {
+      background-color: $chocolate-dark;
+    }
+    .iconContainer5 {
+      background-color: $orange-dark;
+    }
+    .iconContainer6 {
+      background-color: $voilet-dark;
+    }
+    .iconContainer7 {
+      background-color: $pink-dark;
+    }
+    .iconContainer8 {
+      background-color: $green-dark;
+    }
+    .iconContainer9 {
+      background-color: $black-light;
+    }
+  }
+}

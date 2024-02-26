@@ -1,0 +1,29 @@
+@import "../../styles/var";
+.navbar{
+    // background-color: $white-light;
+    height:80px;
+    z-index: 1000;
+    .icon{
+        color: $primary-dark;
+        font-size: 38px;
+    }
+    .navlink_container{
+        // background-color: $white-light;
+        @media screen and (max-width: 992px)   {
+           padding-bottom: 10px;
+        }
+        li{
+            a{
+                font-size: 18px ;
+                color:$bb-dark;
+                .icon{
+                    color: $bb-dark;
+                    font-size: $font-lg - 8px ;
+                }
+                @media screen and (max-width: 1100px) and (min-width:990px)  {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/var";
+.modal {
+  background-color: #00000079;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background-color: $primary-coffee-light;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-coffee;
+  }
+}

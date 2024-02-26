@@ -1,0 +1,72 @@
+@import "../../styles/var";
+.testimonial {
+  .cardContainer {
+    height: 300px;
+    width: 400px;
+
+    div {
+      z-index: 100;
+      img {
+        //   width: 100%;
+        object-fit: cover;
+        height: 130px;
+        width: 140px;
+        border-radius: 50%;
+      }
+    }
+    position: relative;
+    .circleOne {
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      background-color: $primary-light-yellow;
+      top: 0px;
+      right: 0px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      @media  screen and (max-width:576px) {
+        transform: translate(-20%, -20%);
+      }
+    }
+    .circleTwo {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: $primary-light-red;
+      top: 50%;
+      left: 0px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      @media  screen and (max-width:576px) {
+        transform: translate(20%, -20%);
+      }
+    }
+    .circleThree {
+      z-index: 1;
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      background-color: $primary-light-green;
+      bottom: 0px;
+      right: 0px;
+      border-radius: 50%;
+      transform: translate(-150%, 50%);
+      @media  screen and (max-width:576px) {
+        transform: translate(-50%, -10%);
+      }
+    }
+  }
+  background-color: $primary-light-pink;
+  .heading {
+    font-weight: 700;
+    z-index: 100;
+    .text_orange {
+      color: $primary-orange;
+    }
+    .text_blue {
+      color: $primary-blue;
+    }
+  }
+}

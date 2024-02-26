@@ -1,0 +1,41 @@
+@import "../../styles/var";
+.franchisePartnershipDesc {
+  .franchisePartnership_img {
+    img {
+      height  : 90%;
+      // height: 500px;
+      width: 100%;
+    }
+  }
+  .heading {
+    h1 {
+      @media screen and (max-width:500px) {
+        font-size: 25px;
+        
+      }
+    }
+  }
+  .franchisePartnership_title {
+    background-color: $primary-coffee;
+    font-size: 20px;
+    width: fit-content;
+  }
+  .franchisePartnership_desc {
+    color: $text-gray;
+    font-size: 18px;
+    p{
+      text-align: justify;
+    }
+  }
+  .franchisePartnership_list {
+    input {
+      &::placeholder {
+        color: $text-gray;
+      }
+    }
+    button {
+      background-color: $primary-coffee;
+      padding: 15px 30px;
+    }
+  }
+}

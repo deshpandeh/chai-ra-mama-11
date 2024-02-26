@@ -1,0 +1,36 @@
+@import "../../styles/var";
+.signIn {
+    .heading {
+      font-weight: 700;
+        
+      .text_orange {
+        color: $primary-orange;
+      }
+      .text_blue {
+        color: $primary-blue;
+      }
+    }
+  .container {
+    overflow: hidden;
+    div {
+      overflow: hidden;
+      
+    }
+    .form {
+      input {
+        // outline: none;
+        &::placeholder {
+          font-weight: 500;
+          font-family: sans-serif;
+        }
+      }
+      .submitBtn {
+        button {
+          background-color: $primary-orange;
+          padding: 10px 20px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
