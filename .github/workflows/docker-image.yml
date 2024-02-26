@@ -24,9 +24,9 @@ jobs:
 
       run: |
 
-        sudo docker build -t chai-ra-mama-11-website:latest .
+        sudo docker build -t chairamama1-website:latest .
 
-        sudo docker save chai-ra-mama-11-website:latest | gzip > chai-ra-mama-11-website.tar.gz
+        sudo docker save chairamama1-website:latest | gzip > chairamama1-website.tar.gz
  
     - name: Transfer Docker image to EC2
 
@@ -50,7 +50,7 @@ jobs:
 
         # Transfer image using scp
 
-        scp -i ~/.ssh/id_rsa -P 22 chai-ra-mama-11-website.tar.gz ubuntu@$HOST:/tmp
+        scp -i ~/.ssh/id_rsa -P 22 chairamama1-website.tar.gz ubuntu@$HOST:/tmp
  
     - name: Deploy to EC2
 
@@ -76,12 +76,12 @@ jobs:
 
         ssh -i ~/.ssh/id_rsa ubuntu@$HOST '
 
-          sudo docker load < /tmp/chai-ra-mama-11-website.tar.gz
+          sudo docker load < /tmp/chairamama1-website.tar.gz
 
-          sudo docker stop chai-ra-mama-11-website || true
+          sudo docker stop chairamama1-website || true
 
-          sudo docker rm chai-ra-mama-11-website || true
+          sudo docker rm chairamama1-website || true
 
-          sudo docker run -d --name chai-ra-mama-11-website -p 2024:3000 chai-ra-mama-11-website:latest
+          sudo docker run -d --name chairamama1-website -p 2024:3000 chairamama1-website:latest
 
         '
