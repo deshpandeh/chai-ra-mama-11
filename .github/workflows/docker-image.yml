@@ -1,0 +1,87 @@
+name: Build and Deploy to EC2
+ 
+on:
+
+  push:
+
+    branches:
+
+      - main  # or your default branch
+ 
+jobs:
+
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+ 
+    steps:
+
+    - name: Checkout repository
+
+      uses: actions/checkout@v2
+ 
+    - name: Build and tag Docker image
+
+      run: |
+
+        sudo docker build -t chai-ra-mama-11-website:latest .
+
+        sudo docker save chai-ra-mama-11-website:latest | gzip > chai-ra-mama-11-website.tar.gz
+ 
+    - name: Transfer Docker image to EC2
+
+      env:
+
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+        HOST: ${{ secrets.HOST }}
+
+      run: |
+
+        # Setup SSH key and permissions
+
+        mkdir -p ~/.ssh
+
+        echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+
+        chmod 600 ~/.ssh/id_rsa
+
+        ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+
+        # Transfer image using scp
+
+        scp -i ~/.ssh/id_rsa -P 22 chai-ra-mama-11-website.tar.gz ubuntu@$HOST:/tmp
+ 
+    - name: Deploy to EC2
+
+      env:
+
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+        HOST: ${{ secrets.HOST }}
+
+      run: |
+
+        # Setup SSH key and permissions
+
+        mkdir -p ~/.ssh
+
+        echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+
+        chmod 600 ~/.ssh/id_rsa
+
+        ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+ 
+        # SSH and Docker commands to run on EC2
+
+        ssh -i ~/.ssh/id_rsa ubuntu@$HOST '
+
+          sudo docker load < /tmp/chai-ra-mama-11-website.tar.gz
+
+          sudo docker stop chai-ra-mama-11-website || true
+
+          sudo docker rm chai-ra-mama-11-website || true
+
+          sudo docker run -d --name chai-ra-mama-11-website -p 2024:3000 chai-ra-mama-11-website:latest
+
+        '
